@@ -1,0 +1,31 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+
+{
+    "name": "Caneta",
+    "price": 0.80
+}
+
+
+###
+GET http://localhost:4002/products
+
+
+###
+GET http://localhost:4002/products/00213a5f-c650-41f1-9218-841ed2b2731a
+
+
+###
+PUT http://localhost:4002/products/00213a5f-c650-41f1-9218-841ed2b2731a
+content-type: application/json
+
+
+{
+    "name": "Caneta Azul Brilhante",
+    "price": 2.50
+}
+
+
+###
+DELETE http://localhost:4002/products/ae0e904d-3501-4b15-b3b8-d8bd8700f54a
